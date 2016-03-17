@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.example.android.happybithday.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/nip"
+        android:scaleType="centerCrop"
+        android:contentDescription= "@null"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/happy_birthday"
+
+        android:textColor="#F44336"
+        android:textSize="36sp"
+        android:padding="16dp"
+        />
+    <TextView
+        android:id="@+id/gallery_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photo_galley"
+        android:background="#1A237E"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/gallery1_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gallery_view"
+        android:text="@string/Profile"
+        android:background="#CDDC39"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/wish_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:text="@string/wish_him"
+        android:textColor="#009688"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/wish_text_view"
+        android:layout_toRightOf="@id/wish_text_view"
+        android:src="@drawable/gplus"
+        android:contentDescription= "@null"
+        />
+</RelativeLayout>
